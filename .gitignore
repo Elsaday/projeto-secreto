@@ -1,0 +1,9 @@
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignora a pasta de configurações do VSCode
+.vscode/
+
+# Ignora a pasta de módulos
+node_modules/
