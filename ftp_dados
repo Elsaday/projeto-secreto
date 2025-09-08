@@ -1,0 +1,50 @@
+Website for testeinfinityfree.infy.uk
+brasil738
+
+FTP Username
+if0_39894279
+
+FTP Password
+brasil738
+
+FTP Hostname
+ftpupload.net
+
+--------------------------------
+Aqui está o passo a passo completo, resumido e com foco na única parte que exige o terminal.
+
+
+### Passo a passo para um novo projeto com deploy automático
+
+1.  **Crie o projeto local e a estrutura:**
+
+      * Crie uma nova pasta para o projeto.
+      * Adicione a estrutura de arquivos e pastas: `index.html` e `.github/workflows/deploy.yml`.
+
+2.  **Crie o repositório no GitHub:**
+
+      * No site do GitHub, crie um novo repositório **vazio**.
+
+3.  **Conecte e envie (Único passo no terminal):**
+
+      * No VS Code, abra o terminal na pasta do projeto.
+      * Use os seguintes comandos, um por um. Troque `SEU-LINK` pelo endereço do seu repositório no GitHub.
+
+    <!-- end list -->
+
+    ```bash
+    git init
+    git add .
+    git commit -m "Descrição do primeiro commit"
+    git branch -M main
+    git remote add origin SEU-LINK
+    git push -u origin main
+    ```
+
+4.  **Configure as chaves secretas:**
+
+      * No GitHub, vá para **Settings** \> **Secrets and variables** \> **Actions** e crie as chaves de FTP.
+
+5.  **Faça o deploy:**
+
+      * Qualquer push futuro, feito pelo VS Code, acionará o deploy automático.
