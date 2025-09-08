@@ -40,6 +40,7 @@ Aqui está o passo a passo completo, resumido e com foco na única parte que exi
     git remote add origin SEU-LINK
     git push -u origin main
     ```
+      (git remote add origin https://github.com/Elsaday/projeto-secreto.git)
 
 4.  **Configure as chaves secretas:**
 
